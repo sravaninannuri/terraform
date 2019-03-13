@@ -25,17 +25,16 @@ variable "private_subnet_name" {}
 variable Main_Routing_Table {}
 variable "azs" {
   description = "Run the EC2 Instances in these Availability Zones"
-  type = "list"
+  type = list
   default = ["us-east-1a", "us-east-1b", "us-east-1c"]
 }
 variable "environment" { default = "dev" }
 variable "instance_type" {
-  type = "map"
-  default = {
+  type = map
+    default = {
     dev = "t2.nano"
     test = "t2.micro"
     prod = "t2.medium"
     }
 }
-
 

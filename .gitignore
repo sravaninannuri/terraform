@@ -1,0 +1,17 @@
+.terraform/*
+backend.json
+.terraform.lock.hcl
+.terraform
+
+
+
+
+
+
+
+
+
+
+
+
+
